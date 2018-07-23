@@ -1,0 +1,66 @@
+﻿@model eatacupcake13.Models.EntryViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <img class="mb-4 img-fluid img-thumbnail d-none d-sm-block pt-3" src="https://raw.githubusercontent.com/Isotopen/eatacupcake13/gh-pages/img/Logo_1.png">
+    <p class="lead">
+        Come in and try our flavors of the week or order some optional flavors for pick-up or delivery!
+        We also have Gluten Free, Sugar-Free and Vegan options.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>What We Do</h2>
+        <p>
+            Here at The Chichimommas Cuppycakes 13, baking is our passion.
+            We use only the finest and freshest ingredients to create cupcakes that will fill your belly and warm your heart.
+            I wouldn't feed you anything I wouldn't feed my daughter.
+            Come and visit - your taste buds will thank you!
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Cuppycakes</h2>
+        <p>NuGet </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Chichimommas Corner</h2>
+        <p>
+            We are thinking about hosting a fun event, but can't decide what kind.
+            Should we do a cupcake idol, a design your own cupcake or the 2nd annual cupcake eating contest?
+            Post on our Facebook page and let us know what you think!
+        </p>
+    </div>
+</div>
+
+<div class="RadioButtonGroup">
+    <div class="row">
+        <div><a href="@Url.Action("Create")" class="btn btn-primary text-sm-right">Add a cupcake</a></div>
+    </div>
+</div>
+
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>Edit entry</th>
+            <th>Delete entry</th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Season</th>
+            <th>&nbsp;</th>
+        </tr>
+        @foreach (var item in Model.Cupcake)
+        {
+            <tr>
+                <td><a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-dark btn-sm margin-right">Edit</a></td>
+                <td><a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger btn-sm">Delete</a></td>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@item.DateAdded.ToString("yyyy")</td>
+                <td>@item.SeasonType</td>
+            </tr>
+        }
+    </table>
+</div>

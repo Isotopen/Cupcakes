@@ -1,0 +1,34 @@
+﻿@model eatacupcake13.Models.EntryViewModel
+
+@{
+    ViewBag.Title = "Menu";
+}
+
+<div class="RadioButtonGroup">
+    <div class="row">
+        <div><a href="@Url.Action("Create")" class="btn btn-primary text-sm-right">Add a cupcake</a></div>
+    </div>
+</div>
+
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>Edit entry</th>
+            <th>Delete entry</th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Season</th>
+            <th>&nbsp;</th>
+        </tr>
+        @foreach (var item in Model.Cupcake)
+        {
+            <tr>
+                <td><a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-dark btn-sm margin-right">Edit</a></td>
+                <td><a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger btn-sm">Delete</a></td>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@item.DateAdded.ToString("yyyy")</td>
+                <td>@item.SeasonType</td>
+            </tr>
+        }
+    </table>
+</div>

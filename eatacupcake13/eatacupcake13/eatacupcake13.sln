@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eatacupcake13", "eatacupcake13\eatacupcake13.csproj", "{71F1579F-E83C-446C-A371-634777D29910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eatacupcake13.Tests", "eatacupcake13.Tests\eatacupcake13.Tests.csproj", "{42A2E628-CCFB-4F5A-8F4D-A043A83B91BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71F1579F-E83C-446C-A371-634777D29910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F1579F-E83C-446C-A371-634777D29910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F1579F-E83C-446C-A371-634777D29910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F1579F-E83C-446C-A371-634777D29910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A2E628-CCFB-4F5A-8F4D-A043A83B91BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A2E628-CCFB-4F5A-8F4D-A043A83B91BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A2E628-CCFB-4F5A-8F4D-A043A83B91BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A2E628-CCFB-4F5A-8F4D-A043A83B91BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51F96716-2315-487D-B7D7-4BB25B491BC7}
+	EndGlobalSection
+EndGlobal
