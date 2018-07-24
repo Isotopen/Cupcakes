@@ -3,29 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8b04b8">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://isotopen.github.io/eatacupcake13/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Chichimommas Cuppycakes 13", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand logo text-white">Chichimommas Cuppycakes 13</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse text-white">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Menu", "Menu", "Home")</li>
+                    @*<li>@Html.ActionLink("Menu", "Menu", "Home")</li>
                     <li>@Html.ActionLink("Occassions", "Occassions", "Home")</li>
-                    <li>@Html.ActionLink("Images", "Images", "Home")</li>
+                    <li>@Html.ActionLink("Images", "Images", "Home")</li>*@
                 </ul>
             </div>
         </div>
@@ -34,44 +34,48 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>
-                &copy; @DateTime.Now.Year - Chichimommas Cuppycakes 13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <a href="https://squareup.com/outreach/C1HP7x/subscribe" target="_blank" data-content="https://squareup.com/outreach/C1HP7x/subscribe" data-type="external" role="button" id="comp-j6p3na1blink" class="style-j6p5g9m7link">
-                    <span id="comp-j6p3na1blabel" class="style-j6p5g9m7label">Email Signup</span>
-                </a>
-                <div data-hide-prejs="true" class="lb1" id="LnkBr3-1ejs">
-                    <ul aria-label="Social bar" id="LnkBr3-1ejsitemsContainer" class="lb1itemsContainer">
-                        <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs0image">
-                            <a href="https://www.yelp.com/biz/chichimommas-cuppycakes-13-louisville" target="_blank" data-content="https://www.yelp.com/biz/chichimommas-cuppycakes-13-louisville" data-type="external" id="LnkBr3-1ejs0imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jirsdqpb1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.yelp.com/biz/chichimommas-cuppycakes-13-louisville&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jirsdqpb&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Yelp Social Icon&quot;,&quot;uri&quot;:&quot;263c6eefe13c431681f9363e2e92ddb7.png&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Yelp Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs0imageimage">
-                                    <img id="LnkBr3-1ejs0imageimageimage" alt="Yelp Social Icon" data-type="image" style="width: 41px; height: 41px; object-fit: cover;" src="https://static.wixstatic.com/media/263c6eefe13c431681f9363e2e92ddb7.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/263c6eefe13c431681f9363e2e92ddb7.png">
-                                </div>
-                            </a>
-                        </li>
-                        <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs1image">
-                            <a href="http://www.instagram.com/chichimommascuppycakes13" target="_blank" data-content="http://www.instagram.com/chichimommascuppycakes13" data-type="external" id="LnkBr3-1ejs1imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-j5fg4eee1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;http://www.instagram.com/chichimommascuppycakes13&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-j5fg4eee&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Instagram Social Icon&quot;,&quot;uri&quot;:&quot;fb5d18fdfff64a56a7e136d2016a1b7b.png&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Instagram Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs1imageimage">
-                                    <img id="LnkBr3-1ejs1imageimageimage" alt="Instagram Social Icon" data-type="image" style="width: 41px; height: 41px; object-fit: cover;" src="https://static.wixstatic.com/media/fb5d18fdfff64a56a7e136d2016a1b7b.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/fb5d18fdfff64a56a7e136d2016a1b7b.png">
-                                </div>
-                            </a>
-                        </li>
-                        <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs2image">
-                            <a href="https://www.facebook.com/Chichimommas/?fref=ts" target="_blank" data-content="https://www.facebook.com/Chichimommas/?fref=ts" data-type="external" id="LnkBr3-1ejs2imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;4col&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.facebook.com/Chichimommas/?fref=ts&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;i01ts4&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Facebook Social Icon&quot;,&quot;uri&quot;:&quot;e316f544f9094143b9eac01f1f19e697.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Facebook Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs2imageimage">
-                                    <img id="LnkBr3-1ejs2imageimageimage" alt="Facebook Social Icon" data-type="image" style="width: 41px; height: 41px; object-fit: cover;" src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/e316f544f9094143b9eac01f1f19e697.png">
-                                </div>
-                            </a>
-                        </li>
-                        <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs3image">
-                            <a href="https://twitter.com/Chichimomma13" target="_blank" data-content="https://twitter.com/Chichimomma13" data-type="external" id="LnkBr3-1ejs3imagelink" class="lb1imageItemlink">
-                                <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;6ymv&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://twitter.com/Chichimomma13&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;i1rnx&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Twitter Social Icon&quot;,&quot;uri&quot;:&quot;9c4b521dd2404cd5a05ed6115f3a0dc8.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Twitter Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs3imageimage">
-                                    <img id="LnkBr3-1ejs3imageimageimage" alt="Twitter Social Icon" data-type="image" style="width: 41px; height: 41px; object-fit: cover;" src="https://static.wixstatic.com/media/9c4b521dd2404cd5a05ed6115f3a0dc8.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/9c4b521dd2404cd5a05ed6115f3a0dc8.png">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="row col-md text-md-center">
+                    <p>
+                        &copy; @DateTime.Now.Year - Chichimommas Cuppycakes 13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="https://squareup.com/outreach/C1HP7x/subscribe" target="_blank" data-content="https://squareup.com/outreach/C1HP7x/subscribe" data-type="external" role="button" id="comp-j6p3na1blink" class="style-j6p5g9m7link">
+                            <span id="comp-j6p3na1blabel" class="text-white">Email Signup</span>
+                        </a>
+                        <div data-hide-prejs="true" class="lb1" id="LnkBr3-1ejs">
+                            <ul aria-label="Social bar" id="LnkBr3-1ejsitemsContainer" class="lb1itemsContainer">
+                                <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs0image">
+                                    <a href="https://www.yelp.com/biz/chichimommas-cuppycakes-13-louisville" target="_blank" data-content="https://www.yelp.com/biz/chichimommas-cuppycakes-13-louisville" data-type="external" id="LnkBr3-1ejs0imagelink" class="lb1imageItemlink">
+                                        <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jirsdqpb1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.yelp.com/biz/chichimommas-cuppycakes-13-louisville&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jirsdqpb&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Yelp Social Icon&quot;,&quot;uri&quot;:&quot;263c6eefe13c431681f9363e2e92ddb7.png&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Yelp Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs0imageimage">
+                                            <img id="LnkBr3-1ejs0imageimageimage" alt="Yelp Social Icon" data-type="image" style="width: 30px; height: 30px; object-fit: cover;" src="https://static.wixstatic.com/media/263c6eefe13c431681f9363e2e92ddb7.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/263c6eefe13c431681f9363e2e92ddb7.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs1image">
+                                    <a href="http://www.instagram.com/chichimommascuppycakes13" target="_blank" data-content="http://www.instagram.com/chichimommascuppycakes13" data-type="external" id="LnkBr3-1ejs1imagelink" class="lb1imageItemlink">
+                                        <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-j5fg4eee1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;http://www.instagram.com/chichimommascuppycakes13&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-j5fg4eee&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Instagram Social Icon&quot;,&quot;uri&quot;:&quot;fb5d18fdfff64a56a7e136d2016a1b7b.png&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Instagram Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs1imageimage">
+                                            <img id="LnkBr3-1ejs1imageimageimage" alt="Instagram Social Icon" data-type="image" style="width: 30px; height: 30px; object-fit: cover;" src="https://static.wixstatic.com/media/fb5d18fdfff64a56a7e136d2016a1b7b.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/fb5d18fdfff64a56a7e136d2016a1b7b.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs2image">
+                                    <a href="https://www.facebook.com/Chichimommas/?fref=ts" target="_blank" data-content="https://www.facebook.com/Chichimommas/?fref=ts" data-type="external" id="LnkBr3-1ejs2imagelink" class="lb1imageItemlink">
+                                        <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;4col&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.facebook.com/Chichimommas/?fref=ts&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;i01ts4&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Facebook Social Icon&quot;,&quot;uri&quot;:&quot;e316f544f9094143b9eac01f1f19e697.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Facebook Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs2imageimage">
+                                            <img id="LnkBr3-1ejs2imageimageimage" alt="Facebook Social Icon" data-type="image" style="width: 30px; height: 30px; object-fit: cover;" src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/e316f544f9094143b9eac01f1f19e697.png">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width:41px;height:41px;margin-bottom:0;margin-right:5px;display:inline-block" class="lb1imageItem" id="LnkBr3-1ejs3image">
+                                    <a href="https://twitter.com/Chichimomma13" target="_blank" data-content="https://twitter.com/Chichimomma13" data-type="external" id="LnkBr3-1ejs3imagelink" class="lb1imageItemlink">
+                                        <div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;6ymv&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://twitter.com/Chichimomma13&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;i1rnx&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Twitter Social Icon&quot;,&quot;uri&quot;:&quot;9c4b521dd2404cd5a05ed6115f3a0dc8.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;height&quot;:200,&quot;alt&quot;:&quot;Twitter Social Icon&quot;},&quot;displayMode&quot;:&quot;fill&quot;}" style="width: 41px; height: 41px; position: absolute;" data-style="position:absolute;width:41;height:41" class="lb1imageItemimage" id="LnkBr3-1ejs3imageimage">
+                                            <img id="LnkBr3-1ejs3imageimageimage" alt="Twitter Social Icon" data-type="image" style="width: 30px; height: 30px; object-fit: cover;" src="https://static.wixstatic.com/media/9c4b521dd2404cd5a05ed6115f3a0dc8.png/v1/fill/w_82,h_82,al_c,usm_0.66_1.00_0.01/9c4b521dd2404cd5a05ed6115f3a0dc8.png">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </p>
                 </div>
-            </p>
+            </div>
         </footer>
     </div>
 

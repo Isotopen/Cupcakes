@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    margin: 0;
+    font-family: verdana, sans-serif;
+    position: relative;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +24,13 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.bg-purple {
+    background-color: #8b04b8;
+}
+
+.bg-blue {
+    background-color: #0699C1;
 }
